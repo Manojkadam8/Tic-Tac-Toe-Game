@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe Game </title>
+</head>
+<body>
+    <div class="container">
+        <h2>Lets Play Tic Tac Toe Game </h2>
+        <div class="players">
+            <span id="player1" class="play">player 1</span>
+            <span id="player2" class="play">player 2</span>
+        </div>
+        <div class="winnerlabel display-none">
+
+            player 1 is winner
+        </div>
+        <div class="gameboard">
+            <div class="cell b-t b-L"></div>
+            <div class="cell b-t"></div>
+            <div class="cell b-t b-r"></div>
+            <div class="cell b-L "></div>
+            <div class="cell "></div>
+            <div class="cell b-r "></div>
+            <div class="cell b-b b-L"></div>
+            <div class="cell b-b"></div>
+            <div class="cell b-b b-r"></div>
+        </div>
+      
+        <div class="playerturn">
+            <span class="turn">Player 1 :</span>
+           <div class="countdown">
+            <svg>
+                <circle cx="70" cy="70" r="30" class="cir"></circle>
+                <circle cx="70" cy="70" r="30" id="progress"></circle>
+              
+            </svg>
+            <p id="time" >30</p>
+           </div>
+        </div>
+ 
+        <button id="btn">Restart</button>
+
+
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
